@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>순서 선택자</title>
+    <style>
+      ul li:nth-child(1) {
+        border: 1px solid red;
+      }
+      ul li:nth-last-of-type(2) {
+        border: 1px solid green;
+      }
+      ul li:nth-last-of-type(4) {
+        border: 1px solid blue;
+      }
+      ul li:nth-last-of-type(2n) {
+      }
+      ul li:last-child {
+        border: 1px solid violet;
+      }
+      ul li:first-child {
+        border: 1px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+  </body>
+</html>

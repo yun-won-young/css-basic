@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자손 선택자- 자식과 하위 요소 모두 선택</title>
+    <style>
+      div strong {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <strong>그냥 텍스트 요소</strong>
+    <!-- <b>텍스트 요소</b> -->
+    <div>
+      <p>
+        <strong>자손 텍스트 요소</strong>
+      </p>
+      <strong>자손 텍스트 요소</strong>
+    </div>
+  </body>
+</html>

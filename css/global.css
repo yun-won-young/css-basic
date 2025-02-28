@@ -1,0 +1,29 @@
+@import "./normalize.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.23px;
+  word-break: break-all;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}

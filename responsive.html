@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 웹 미디어쿼리</title>
+    <style>
+      section {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      article {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px auto;
+      }
+      @media screen and (max-width: 900px) {
+        section {
+          flex-direction: column;
+        }
+        article {
+          width: 100%;
+          max-width: 600px;
+          height: 100%;
+          aspect-ratio: 1 / 1;
+          background-color: orange;
+        }
+      }
+      @media screen and (max-width: 425px) {
+        article {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+  </body>
+</html>

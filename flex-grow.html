@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+    <style>
+      section {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+      }
+      article {
+        background-color: cadetblue;
+        border: 1px solid #333;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      article:nth-child(1) {
+        flex-grow: 3;
+      }
+      article:nth-child(2) {
+        flex-grow: 2;
+      }
+
+      article:nth-child(3) {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>flex-grow</article>
+      <article>flex-grow</article>
+      <article>flex-grow</article>
+    </section>
+  </body>
+</html>

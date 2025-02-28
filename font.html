@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폰트 스타일링</title>
+    <style>
+      /* 구글폰트 */
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap");
+      /* 눈누 */
+      @font-face {
+        font-family: "Ownglyph_ParkDaHyun";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html,
+      body {
+        font-size: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+      p span {
+        font-size: 2em;
+      }
+      p span {
+        font-size: 2rem;
+      }
+      p {
+        font-family: "Noto Sans KR", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: red;
+        color: rgb(48, 137, 189);
+        color: rgb(212, 44, 162);
+      }
+      .font-style {
+        /* 160% 한글은 125% 적당할 듯 */
+        line-height: 1.6;
+        letter-spacing: -0.23px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <p>한글이지롱 <span>ipsum</span>ipsum dolor sit amet.</p>
+    <p class="font-style">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque
+      assumenda provident ipsa quisquam vero iusto dolorum accusamus culpa
+      delectus, amet cupiditate, quod voluptatibus praesentium laboriosam optio
+      quia! Praesentium, odio?
+    </p>
+  </body>
+</html>

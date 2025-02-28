@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-shrink</title>
+    <style>
+      section {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+      }
+      article {
+        background-color: cadetblue;
+        border: 1px solid #333;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      article:nth-child(1) {
+        /* flex-shrink: 3; */
+        flex: 1 1 0;
+      }
+      article:nth-child(2) {
+        /* flex-shrink: 2; */
+        flex: 1 1 0;
+      }
+
+      article:nth-child(3) {
+        /* flex-shrink: 1; */
+        flex: 1 1 0;
+      }
+      @media screen and (max-width: 768px) {
+        section {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>flex-shrink</article>
+      <article>flex-shrink</article>
+      <article>flex-shrink</article>
+    </section>
+  </body>
+</html>

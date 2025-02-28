@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      article {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        margin: 100px auto;
+        animation-name: rotation;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-play-state: running;
+        animation-direction: alternate-reverse;
+      }
+      article:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body>
+    <article></article>
+  </body>
+</html>

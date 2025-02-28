@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      .wrap {
+        width: 800px;
+        margin: 100px auto;
+        border: 5px solid black;
+      }
+      .wrap .left {
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+        float: right;
+      }
+      .wrap .right {
+        width: 400px;
+        height: 400px;
+        background-color: lightblue;
+        float: left;
+      }
+      .wrap::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      /* .wrap .box1 {
+        width: 800px;
+        height: 800px;
+        background-color: aquamarine;
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="left"></section>
+      <section class="right"></section>
+      <!-- <section class="box1"></section> -->
+    </div>
+  </body>
+</html>

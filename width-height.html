@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>너비와 높이</title>
+    <style>
+      section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 20px; */
+      }
+      article {
+        /* width: 60vw;
+        height: 50vw; */
+        width: 33.333%;
+        max-width: 400px;
+        min-width: 300px;
+        /* height: 300px; */
+        aspect-ratio: 6 / 5;
+        background-color: aqua;
+        /* margin-top: 20px; */
+        margin: 20px;
+      }
+      .aspect-ratio {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>100px</article>
+      <article>20%</article>
+      <article class="aspect-ratio">apect-ratio</article>
+    </section>
+  </body>
+</html>

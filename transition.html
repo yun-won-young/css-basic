@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+    <style>
+      section {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        float: left;
+        margin: 50px;
+        perspective: 400px;
+      }
+      section article {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        opacity: 0.3;
+        transform: rotateY(0deg);
+        transition-property: transform opacity;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        /* transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s; */
+      }
+      section:hover article {
+        transform: rotateY(180deg);
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article></article>
+    </section>
+  </body>
+</html>
